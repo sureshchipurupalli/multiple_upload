@@ -30,3 +30,4 @@ http://www.railscook.com/recipes/multiple-files-upload-with-nested-resource-usin
 
 # multiple_upload
 # multiple_upload
+# multiple_upload
