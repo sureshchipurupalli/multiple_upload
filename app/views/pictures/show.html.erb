@@ -11,10 +11,15 @@
   <dt><strong><%= model_class.human_attribute_name(:gallery_id) %>:</strong></dt>
   <dd><%= @picture.gallery_id %></dd>
 </dl>
+ 
+<p>
+  <strong>picture:</strong>
+  <%= image_tag @picture.image.url(:large) %>
+</p>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              pictures_path, :class => 'btn'  %>
+              gallery_path(@picture.gallery_id), :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_picture_path(@picture), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),

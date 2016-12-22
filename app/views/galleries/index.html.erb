@@ -2,7 +2,7 @@
   <h1>Galleries</h1>
   <%= link_to 'New', new_gallery_path, :class => 'btn btn-mini' %>
   <p></p>
-  <ul class="thumbnails files">
+  <tr class="thumbnails files">
     <% @galleries.each do |gallery| %>
         <li class="span4" id="gallery_<%= gallery.id %>">
           <div class="thumbnail">
@@ -25,6 +25,6 @@
           </div>
         </li>
     <% end %>
-  </ul>
+  </tr>
 
 </div>
